@@ -37,7 +37,7 @@ export default function DiceSimulator() {
               style={{
                 border: "1px solid #ccc",
                 padding: 16,
-                width: 150,
+                width: 114,
                 textAlign: "center",
               }}
             >
@@ -63,7 +63,6 @@ export default function DiceSimulator() {
                     </div>
                   )}
 
-                  <div>{result.title}</div>
                 </>
               ) : (
                 <div>Not rolled</div>
