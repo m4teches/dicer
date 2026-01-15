@@ -21,13 +21,13 @@ export default function DiceSimulator() {
 
   return (
     <div style={{ padding: 24 }}>
-      <h1>Dice Simulator</h1>
+      <h1 className="text-2xl font-bold mb-4">Dice Simulator</h1>
 
-      <button onClick={throwDices} style={{ marginBottom: 20 }}>
+      <button onClick={throwDices} style={{ marginBottom: 20 }} className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
         Throw Dices
       </button>
 
-      <div style={{ display: "flex", gap: 24 }}>
+      <div style={{ display: "flex", gap: 24, flexWrap: "wrap", justifyContent: "center" }}>
         {initialDices.map((dice) => {
           const result = results[dice.id];
 
@@ -38,6 +38,7 @@ export default function DiceSimulator() {
                 border: "1px solid #ccc",
                 padding: 16,
                 width: 114,
+                flexShrink: 0,
                 textAlign: "center",
               }}
             >
